@@ -20,6 +20,6 @@ Java 1.7 or higher
 
 PlayDB Under the Hood
 ---
-![image](https://github.com/selvadurai/PlayDB/assets/4705770/916d7422-de55-4094-b19b-628ae505e910)
+![image](https://github.com/selvadurai/PlayDB/assets/4705770/8a1479fc-7d83-4640-97f4-01ed473d89d3)
 
 
