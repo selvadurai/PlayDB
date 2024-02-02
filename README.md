@@ -22,6 +22,6 @@ PlayDB Under the Hood
 ---
 **Code Design:**
 
-![image](https://github.com/selvadurai/PlayDB/assets/4705770/05057146-665e-4396-8542-0e6b0c7d0837)
+![image](https://github.com/selvadurai/PlayDB/assets/4705770/04a0aca8-702f-4020-89f8-f455e8d4108a)
 
 
