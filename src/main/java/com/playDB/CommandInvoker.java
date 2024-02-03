@@ -111,12 +111,22 @@ public class CommandInvoker {
 		}
 		
 		/*If replace statement is valid, parse function and store command in queue
-		 *Example "replace(age>36,{age:100})" */
+		 *Example "replace(age>36,{age:100},table)" */
 		if(FuncParser.isValidReplaceFunction(function)) {
+			
 			String parameter=(String) function.subSequence(function.indexOf("(")+1, function.indexOf(")"));
+			
+			String json=(String) function.subSequence(function.indexOf("{") , function.indexOf("}")+1 );
+			
+			String table=(String) function.subSequence(function.indexOf("}")+2 , function.indexOf(")") );
+
+			
+			
 			String[] parameterList = parameter.split(",");
-			System.out.println(parameterList[0]+" "+parameterList[1]+" "+parameterList[2]);
-			queue.offer(new ReplaceCommand(parameterList[0].trim(),parameterList[1].trim(),parameterList[2].trim() ));
+			
+			System.out.println("Test Replace"+parameterList[0]+" "+json+" "+table);
+			
+			queue.offer(new ReplaceCommand(parameterList[0].trim(),json.trim(),table.trim() ));
 		}
 		
 			

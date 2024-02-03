@@ -320,7 +320,8 @@ public class BtreeSchema extends Schema {
 			
 			 while(i.hasMoreElements()) {
 				map.replace(i.nextElement() , json);
-			 } 
+			 }
+			 
 		}
 		else {
 			System.out.println("No Records found to replace!");
