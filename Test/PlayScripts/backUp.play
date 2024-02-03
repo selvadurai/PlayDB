@@ -1,0 +1,12 @@
+create database backDisk.db
+list databases
+connect to backDisk.db
+insert({name:"Kevin",age:23,occupation:"programmer"},employee)
+insert({name:"Bob",age:26,occupation:"inventory"},employee)
+insert({name:"Stacy",age:26,occupation:"accounting"},employee)
+insert({name:"Kumar",age:36,occupation:"programmer"},employee)
+output employee
+replace(occupation=="progammer",{name:"Kumar",age:36,occupation:"dreamer"},employee)
+replace(occupation=="progammer",{name:"Kumar",age:36,occupation:"dreamer"},employee)
+output employee
+employee > employeeOutput.json
