@@ -1,13 +1,10 @@
-create database backDis.db
+create database backDisk.db
 list databases
 connect to backDisk.db
-insert({name:"Kevin",age:23,occupation:"programmer"},employee)
-insert({name:"Bob",age:26,occupation:"inventory"},employee)
-insert({name:"Stacy",age:26,occupation:"accountant"},employee)
-insert({name:"Kumar",age:36,occupation:"programmer"},employee)
-insert({name:"Tom",age:47,occupation:"sales"},employee)
+insert({name:"Kevin",age:23,occupation:"programmer"},bckemployee)
+insert({name:"Bob",age:26,occupation:"inventory"},bckemployee)
+insert({name:"Stacy",age:26,occupation:"accountant"},bckemployee)
+insert({name:"Kumar",age:36,occupation:"programmer"},bckemployee)
+insert({name:"Tom",age:47,occupation:"sales"},bckemployee)
 output employee
-replace(occupation=="programmer" && name=="kevin",{name:"Kevin",age:23,occupation:"dreamer"},employee)
-remove(name=="Tom" && occupation=="sales",employee)
-output employee
-employee  > output.json
+bckemployee  > output.json
